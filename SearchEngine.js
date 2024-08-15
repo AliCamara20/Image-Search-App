@@ -20,6 +20,8 @@ async function imageSearchEngine(){
         searchResult.innerHTML = "Result Not Found";
         searchResult.style.fontSize = "70px";
         searchResult.style.margin = "auto";
+
+        searchResult.classList.add("error");
         
     }
 
