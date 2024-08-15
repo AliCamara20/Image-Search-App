@@ -21,8 +21,10 @@ form{
     display: flex;
     justify-content: center;
     margin: 5% auto;
-    
-
+    background-color: var(--primary-color);
+    width: 50%;
+    border-radius: 20px;
+    padding: 50px auto;
 }
 
 
@@ -31,17 +33,19 @@ form input{
     font-size: 1em;
     color: black;
     flex-shrink: 1;
+
 }
 #search-input{
     width: 400px;
-    padding: 20px 10px;
+    padding: 15px 50px;
     border: none;
-    background-color: var(--primary-color);
     outline: none;
     border-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     color: var(--font-color);
+    background: inherit;
+    flex-grow: 1;
 
 }
 #search-input::placeholder{
@@ -57,7 +61,9 @@ form input{
     background-color: var(--secondary-color);
     border-radius: 10px;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;        
+    border-bottom-left-radius: 0;  
+    margin-left: auto; 
+    font-size: 20px;     
     
 }
 
@@ -169,18 +175,7 @@ form input{
    border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-button{
+#showMore-btn{
     margin: 50px auto;
     font-size: 20px;
     text-align: center;
@@ -189,14 +184,14 @@ button{
     background-color: var(--primary-color);
     color: var(--font-color);
     border-radius: 6px;
-    margin: 30px auto;
     display: flex;
     display: none;
+    margin: 30px auto;
     cursor: pointer;
 
 }
 
-button:active{
+#showMore-btn{
     background-color: #b2c4d6;
 }
 
@@ -216,6 +211,8 @@ button:active{
     .search-result{
         grid-template-columns: auto;
     }
+
+
 
 
 }

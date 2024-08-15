@@ -47,12 +47,12 @@ async function imageSearchEngine(){
 
             let likes = document.createElement("div");
             likes.className = "likes";
-            likes.innerHTML = `<i class="fa-sharp fa-regular fa-heart"></i> 
+            likes.innerHTML = `<i class="fa-solid fa-love"></i> 
                                <span> ${result.likes}</span>`;
 
             let downloadBtn = document.createElement("div");
             downloadBtn.className = "download-btn";
-            downloadBtn.innerHTML = `<a href = ${result.links.download} target = "_blank"><i class="fa-sharp fa-regular fa-arrow-down-to-line"></i>  Download </a>`;
+            downloadBtn.innerHTML = `<a href = ${result.links.download} target = "_blank"><i class="fa-solid fa-download"></i> <span>Download</span></a>`;
 
             info.appendChild(likes);
             info.appendChild(downloadBtn);
