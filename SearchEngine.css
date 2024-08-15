@@ -78,11 +78,42 @@ form input{
 }
 
 .error{
-   font-size:  10px;
+   font-size: 10px;
    min-width: 100%;
    margin: auto;
-   margin-left: auto;
 }
+
+.image-div{
+    position: relative;
+}
+
+.search-result .image-div .info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:row;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    column-gap: 50px;
+    
+}
+
+.info i{
+    font-size: 30px;
+    color: red;
+    
+}
+
+.info .download-btn a{
+    display: block;
+    text-decoration: none;
+
+}
+
+
 
 
 
