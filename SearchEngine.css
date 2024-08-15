@@ -89,6 +89,10 @@ form input{
         margin: 10px ;
     }
 
+    .search-result{
+        grid-template-columns: auto;
+    }
+
 
 }
 
