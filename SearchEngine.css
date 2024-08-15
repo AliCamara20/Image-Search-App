@@ -75,6 +75,7 @@ form input{
     width: 100%;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .error{
@@ -87,7 +88,7 @@ form input{
     position: relative;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    
 
 
 }
