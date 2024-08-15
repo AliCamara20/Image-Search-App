@@ -52,11 +52,43 @@ async function imageSearchEngine(){
 
             let downloadBtn = document.createElement("div");
             downloadBtn.className = "download-btn";
-            downloadBtn.innerHTML = `<i class="fa-sharp fa-regular fa-arrow-down-to-line"></i> <a href = ${result.links.download}>Download</a>`;
+            downloadBtn.innerHTML = `<a href = ${result.links.download} target = "_blank"><i class="fa-sharp fa-regular fa-arrow-down-to-line"></i>  Download </a>`;
 
             info.appendChild(likes);
             info.appendChild(downloadBtn);
             imageDiv.appendChild(info);
+
+
+            let description = document.createElement("div");
+            description.className = "desc";
+
+            let userImageBox = document.createElement("div");
+            userImageBox.className = "img-box";
+            let userImage = document.createElement("img");
+
+
+            let userInfo = document.createElement("div");
+            userInfo.className = "user-info";
+
+            let userFullName = document.createElement("h3");
+            let username = document.createElement("span");
+            let imageDescription = document.createElement("p");
+            
+            userImage.src  = result.user.profile_image.small;
+            userFullName.innerText =  result.user.name;
+            username.innerText = result.user.username;
+            
+            userImageBox.appendChild(userImage);
+            userInfo.appendChild(userFullName);
+            userInfo.appendChild(username);
+            
+            description.appendChild(userImageBox);
+            description.appendChild(userInfo);
+
+            imageDiv.appendChild(description);
+            
+
+
 
 
             

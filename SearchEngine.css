@@ -83,35 +83,97 @@ form input{
    margin: auto;
 }
 
-.image-div{
+.search-result .image-div{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+
 }
+
 
 .search-result .image-div .info{
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
     flex-direction:row;
     position: absolute;
-    bottom: 30px;
+    bottom: 120px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    column-gap: 50px;
-    
+    transition: .5s ease;
 }
+/*
+.image-div:hover .info{
+    display: block;
+}
+*/
 
-.info i{
+
+
+.info .likes i{
     font-size: 30px;
     color: red;
-    
+    fill: red;
+    display: block;
+}
+
+.info .download-btn i{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.info .likes span{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .info .download-btn a{
     display: block;
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
 
 }
+
+.info.download-btn a:hover{
+    text-decoration: 2px solid white;
+}
+
+
+.search-result .image-div .desc{
+   width: 100%;
+   margin: 30px 0;
+   display: flex;
+   column-gap: 20px;
+}
+
+.desc .img-box{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.desc .img-box img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+
+
+
+
+
+
 
 
 
@@ -156,6 +218,8 @@ button:active{
 
 
 }
+
+
 
 
 
