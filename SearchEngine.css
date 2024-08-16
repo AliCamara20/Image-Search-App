@@ -103,40 +103,44 @@ form input{
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction:row;
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translateX(-50%);
     color: white;
     transition: .5s ease;
+    margin: 20px auto;
+    position: absolute;
+    bottom: 120px;
+    display: none;
+
+    
 }
-/*
+
 .image-div:hover .info{
     display: block;
+    display: flex;
+    transition: .5s ease;
+
 }
-*/
 
 
 
-.info .likes i{
-    font-size: 30px;
-    color: red;
+
+.info .likes svg{
     fill: red;
+    color: red;
     display: block;
+    margin: auto;
+    cursor: pointer;
 }
+   
 
-.info .download-btn i{
-    font-size: 30px;
-    text-align: center;
-    margin-left: 30px;
-}
+
 
 .info .likes span{
     font-size: 20px;
     letter-spacing: 2px;
-    margin: 20px 0;
+    margin: 20px 30px;
     text-align: center;
+    color: black;
+
 }
 
 .info .download-btn a{
@@ -153,7 +157,7 @@ form input{
     display: block;
     text-align: center;
     margin: auto;
-    font-size: 30px;
+    
 }
 
 .info.download-btn a:hover{
