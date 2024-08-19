@@ -201,9 +201,23 @@ form input{
 
 }
 
-#showMore-btn{
+#more-btn{
     background-color: #b2c4d6;
 }
+
+.loader{
+    width: 150px;
+    height: 150px;
+    border: 16px solid var(--primary-color);
+    border-top: 16px solid var(--secondary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: block;
+    margin: auto;
+    display: none;
+}
+
+
 
 
 @media screen and (max-width: 700px) {
@@ -225,6 +239,16 @@ form input{
 
 
 
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 
