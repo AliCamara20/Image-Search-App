@@ -8,7 +8,7 @@ let page = 1;
 let imageName = "";
 const accessKey = "tl8BMn-MvrJdTZSIwnXqHKtfjpCMZF5-QFFeE3COciw";
 
-const darkColors = ["#0c260c", "#262626","#8c8ca6"];
+const darkColors = ["#0c260c", "#262626","#8c8ca6", "#737373", "#262626", "#8c5940", "#c04026", "#262640"];
 
 function loading(){
     searchResult.style.display = "none";
@@ -110,7 +110,7 @@ async function imageSearchEngine(){
 
                 if(darkColors.includes(result.color)){
                     likes.lastElementChild.style.color = "white";
-                    console.log("It is included")
+                    console.log("It is included: " + result.color);
                 }
                 
     
@@ -129,7 +129,7 @@ async function imageSearchEngine(){
 
     catch(error){
         console.log(error);
-        completed();
+        searchResult.innerText = error;
     }
     
     
@@ -157,7 +157,6 @@ searchForm.addEventListener("submit", e => {
     searchResult.innerHTML = "";
     showMore_btn.style.display = "none";
     imageSearchEngine();
-    searchInput.value = "";
     
     
     
@@ -168,6 +167,7 @@ searchForm.addEventListener("submit", e => {
 showMore_btn.addEventListener("click", () => {
     page++;
     imageSearchEngine();
+    console.log("Searching for more");
 })
 
  
