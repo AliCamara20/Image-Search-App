@@ -202,7 +202,7 @@ form input{
    border-radius: 50%;
 }
 
-#more-btn{
+#showMoreBtn{
     margin: 50px auto;
     font-size: 20px;
     text-align: center;
@@ -218,7 +218,7 @@ form input{
 
 }
 
-#more-btn:hover{
+#showMoreBtn:hover{
     background-color: #75ace2;
 }
 
