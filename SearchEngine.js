@@ -4,6 +4,8 @@ const searchBtn = document.getElementById("search-btn");
 const searchResult = document.querySelector(".search-result");
 const showMore_btn = document.querySelector("button");
 const loader = document.querySelector(".loader");
+let darkmode = localStorage.getItem('active');
+const theme_switchBtn = document.getElementById("theme-switch");
 let page = 1;
 let imageName = "";
 const accessKey = "tl8BMn-MvrJdTZSIwnXqHKtfjpCMZF5-QFFeE3COciw";
@@ -122,7 +124,7 @@ async function imageSearchEngine(){
         
                     
             
-        // showMore_btn.style.display = "block";
+        showMore_btn.style.display = "block";
 
         
     }
@@ -135,19 +137,23 @@ async function imageSearchEngine(){
     
 }
     
+theme_switchBtn.addEventListener("click", () =>{
+    darkmode !== 'active'? enableDarkmode() : disableDarkmode();
+    darkmode = localStorage.getItem('darkmode');
+
+});
 
 
-
-
+function enableDarkmode(){
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode', 'active');
     
-    
+}
 
-
-    
-    
-
-    
-
+function disableDarkmode(){
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode', null);
+}
     
 
 
@@ -155,7 +161,7 @@ searchForm.addEventListener("submit", e => {
     e.preventDefault();
     page = 1;
     searchResult.innerHTML = "";
-    //showMore_btn.style.display = "none";
+    showMore_btn.style.display = "none";
     imageSearchEngine();
     
     
@@ -163,14 +169,14 @@ searchForm.addEventListener("submit", e => {
 
 })
 
-/*
+
 
 showMore_btn.addEventListener("click", () => {
     page++;
     imageSearchEngine();
     console.log("Searching for more");
 })
-    */
+    
 
  
 
