@@ -122,7 +122,7 @@ async function imageSearchEngine(){
         
                     
             
-        showMore_btn.style.display = "block";
+        // showMore_btn.style.display = "block";
 
         
     }
@@ -155,7 +155,7 @@ searchForm.addEventListener("submit", e => {
     e.preventDefault();
     page = 1;
     searchResult.innerHTML = "";
-    showMore_btn.style.display = "none";
+    //showMore_btn.style.display = "none";
     imageSearchEngine();
     
     
@@ -163,12 +163,14 @@ searchForm.addEventListener("submit", e => {
 
 })
 
+/*
 
 showMore_btn.addEventListener("click", () => {
     page++;
     imageSearchEngine();
     console.log("Searching for more");
 })
+    */
 
  
 

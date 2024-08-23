@@ -13,11 +13,11 @@ body{
 h1{
    text-align: center;
    margin: 70px 0;
-   font-size: 3rem;
+   font-size: 50px;
 }
 
 form{
-    width: 80%;
+    width: 50%;
     display: flex;
     justify-content: center;
     margin: 50px auto 100px auto;
@@ -97,7 +97,20 @@ form button svg{
     border-radius: 10px;
     position: relative;
     transition: .5s ease;
+    
 
+
+}
+
+.vid-div::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 10%;
+    height: 5px;
+    background: dodgerblue;
+    border-radius: 10px;
 
 }
 
@@ -133,6 +146,22 @@ form button svg{
     object-fit: cover;
 }
 
+.search-result .card .vid-div #downloadLink{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+.search-result .card .vid-div #downloadLink svg{
+    fill: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+
+
 
 .loader{
     width: 150px;
@@ -157,8 +186,8 @@ form button svg{
     border-radius: 6px;
     margin: 30px auto;
     cursor: pointer;
-    display: flex;
-    opacity: 0;
+    display: none;
+     
 
 }
 
