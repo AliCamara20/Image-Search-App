@@ -5,6 +5,9 @@ const searchResultContainer = document.querySelector(".search-result");
 const loader = document.querySelector(".loader");
 const showMore_btn = document.getElementById("showMoreBtn");
 
+ScrollReveal().reveal('.header');
+ScrollReveal().reveal('.searchForm', {delay: 500})
+
 let  query = '';
 let page = 1;
 /*
@@ -64,7 +67,7 @@ function displayVideo(video){
   let downloadLink = document.createElement("a");
   downloadLink.href = video.video_files[0].link;
   downloadLink.id = "downloadLink";
-  downloadLink.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>`
+  downloadLink.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M160-120v-80h640v80H160Zm320-160L280-480l56-56 104 104v-408h80v408l104-104 56 56-200 200Z"/></svg>`
 
 
 
@@ -110,6 +113,8 @@ function displayVideo(video){
   vidDiv.appendChild(downloadLink);
   card.appendChild(vidDiv)
   searchResultContainer.appendChild(card);
+  ScrollReveal().reveal('.card');
+  
   console.log("appended"); 
 
 } 

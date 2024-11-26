@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+    <style>
+        .intro{
+            font-family: 'consolas';
+        }
+        .nickname{
+            font-family: "Alfa Slab One", cursive;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(146, 41, 146);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="intro">Hello, My name is Ali</h1>
+    <h2 class="nickname">The Young Coder</h2>
+    <div class="box"></div>
+
+    <script>
+        ScrollReveal({distance: '100px'})
+        ScrollReveal().reveal('.intro');
+        ScrollReveal().reveal('.intro', {
+                                             origin:'top',
+                                             
+        });
+
+        ScrollReveal().reveal('.nickname', {
+                                             origin:'bottom',
+                                             
+        });
+
+        ScrollReveal().reveal('.box', {rotate: {
+               x: 30,
+               y: 30
+        },
+         scale: .84})
+    </script>
+</body>
+</html>

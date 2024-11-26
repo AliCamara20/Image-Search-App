@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="" frameborder="0"></iframe>
+    <script>
+        const apiKey = 'at_p6bFgeiqJI8sm8ruVZqZghv7szbJh'
+        async function getLocation(ipAdress){
+            const response = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=${apiKey}&ipAddress=${ipAdress}`)
+            const data = await response.json();
+            console.log(data);
+        }
+
+        getLocation('102.69.163.204');
+    </script>
+</body>
+</html>
