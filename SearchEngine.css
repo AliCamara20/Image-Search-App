@@ -41,7 +41,7 @@ form{
     justify-content: space-between;
     align-items: center;
     margin: 1em auto;
-    padding: 1em;
+    padding: .5em 1em;
     width:90%;
     max-width:1200px;
     background: transparent;
@@ -63,6 +63,7 @@ form input{
     outline: none;
     color: var(--primary-color);
     background: transparent;
+    outline:none;
 }
 
 #search-input::placeholder{
@@ -77,6 +78,7 @@ form input{
     display: flex;
     justify-content: center;
     align-items:center;
+    outline:none;
 }
 #search-btn svg{
     width:30px;
@@ -87,7 +89,7 @@ form input{
 .search-result{
     width: 80%;
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr) minmax(300px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     margin: 5em auto;
 
