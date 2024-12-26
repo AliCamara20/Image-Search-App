@@ -52,6 +52,7 @@ async function imageSearchEngine(){
                 link.href = result.links.html;
     
                 const resultImg = document.createElement("img");
+                resultImg.className = 'skeleton'
                 resultImg.src = result.urls.small;
             
                 link.appendChild(resultImg);
