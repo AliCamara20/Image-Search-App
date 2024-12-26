@@ -136,6 +136,9 @@ async function imageSearchEngine(){
     
     
 }
+if(!localStorage.getItem('active')){
+    localStorage.setItem('darkmode', 'active')
+}
     
 theme_switchBtn.addEventListener("click", () =>{
     darkmode !== 'active'? enableDarkmode() : disableDarkmode();
@@ -164,9 +167,6 @@ searchForm.addEventListener("submit", e => {
     showMore_btn.style.display = "none";
     imageSearchEngine();
     
-    
-    
-
 })
 
 
