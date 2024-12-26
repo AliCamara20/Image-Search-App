@@ -32,7 +32,7 @@ body{
 
 h1{
     text-align: center;
-    margin: 4.375em 0;
+    margin: 3em 0;
     font-size: 3rem;
  }
 
@@ -40,7 +40,7 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5% auto;
+    margin: 2em auto;
     padding: 1em;
     width:90%;
     max-width:1200px;
