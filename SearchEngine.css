@@ -46,6 +46,7 @@ form{
     max-width:1200px;
     background: transparent;
     border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 
