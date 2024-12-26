@@ -53,8 +53,6 @@ form input{
     cursor: pointer;
     font-size: 1rem;
     color: black;
-    
-
 }
 #search-input{
     flex-grow:1;
@@ -62,20 +60,17 @@ form input{
     outline: none;
     color: var(--font-color);
     background: transparent;
-
-
 }
+
 #search-input::placeholder{
     color: var(--font-color);
 }
-
 
 #search-btn{
     background-color: var(--secondary-color);
     color: var(--font-color);
     border: none;
-    font-size: 1rem;
-    
+    font-size: 1rem;   
 }
 
 .search-result{
