@@ -42,6 +42,9 @@ form{
     align-items: center;
     margin: 5% auto;
     padding: 1em;
+    width:90%;
+    max-width:1200px;
+    background: transparent;
     border: 1px solid var(--primary-color);
 }
 
