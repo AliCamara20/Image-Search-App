@@ -103,6 +103,18 @@ form input{
     object-fit: cover;
     border-radius: 10px;
 }
+. skeleton {
+    animation: skeleton 1s infinite alternate;
+}
+@keyframes skeleton {
+    0%{
+       background: #eee;
+    }
+    100%{
+       background: #ddd;
+    }
+
+}
 
 .error{
    font-size: 10px;
